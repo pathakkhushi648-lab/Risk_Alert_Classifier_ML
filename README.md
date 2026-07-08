@@ -184,17 +184,57 @@ Financial Risk Dataset → Data Collection → Data Understanding → Data Prepr
 - Saved the best-performing Random Forest model for future prediction.
 
 ---
-
 ## Future Scope
 
-- Perform Hyperparameter Tuning.
-- Build an XGBoost model.
-- Deploy the model using Streamlit.
-- Develop a web application for real-time prediction.
-- Deploy the project on a cloud platform.
+This project can be further enhanced in several ways to improve its performance, usability, and real-world applicability.
+
+- Perform advanced hyperparameter tuning using GridSearchCV and RandomizedSearchCV to improve model performance.
+- Implement advanced machine learning algorithms such as XGBoost, LightGBM, CatBoost, and Gradient Boosting for better prediction accuracy.
+- Develop a Streamlit or Flask web application that allows users to predict customer financial risk in real time.
+- Deploy the trained model on cloud platforms such as AWS, Microsoft Azure, or Google Cloud Platform.
+- Integrate the model with banking and financial management systems for automated credit risk assessment.
+- Build an interactive dashboard using Power BI or Tableau to visualize customer risk, model performance, and business insights.
+- Incorporate Explainable AI (XAI) techniques such as SHAP or LIME to explain how the model makes predictions.
+- Continuously retrain the model using new customer data to maintain prediction accuracy and adapt to changing financial trends.
+- Extend the project to support multi-class financial risk prediction instead of binary classification.
+- Develop an API that allows other applications to access the trained machine learning model for real-time predictions.
 
 ---
 
+## Challenges Faced During the Project
+
+During the development of this project, several practical challenges were encountered. These challenges provided valuable learning experiences in data preprocessing, model development, and machine learning implementation.
+
+- The dataset contained missing values that required careful handling before model training.
+- Selecting an appropriate missing value imputation technique was challenging, and the KNN Imputer was chosen because it preserves relationships between features.
+- The dataset showed class imbalance, which could bias the model toward the majority class. This issue was addressed using SMOTE.
+- Identifying the most suitable machine learning algorithm required training and evaluating multiple models, including Logistic Regression, Decision Tree, and Random Forest.
+- Choosing the appropriate evaluation metrics was important because accuracy alone was insufficient for evaluating an imbalanced classification problem.
+- Understanding feature importance and interpreting model predictions required additional analysis using the Random Forest model.
+- Managing preprocessing steps such as feature scaling, train-test splitting, and preventing data leakage required careful implementation.
+- Hyperparameter tuning increased computational time because multiple combinations of model parameters were evaluated.
+- Resolving library compatibility issues and package installation errors in Google Colab required troubleshooting during implementation.
+- Ensuring that the final model generalized well on unseen data while avoiding overfitting was an important challenge throughout the project.
+
+---
+
+## Key Learning Outcomes
+
+Through this project, the following practical skills were developed:
+
+- Data Cleaning and Data Preprocessing
+- Missing Value Handling using KNN Imputer
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Feature Scaling
+- Handling Imbalanced Data using SMOTE
+- Building Classification Models
+- Model Evaluation using Multiple Performance Metrics
+- Feature Importance Analysis
+- Machine Learning Model Comparison
+- Saving and Loading Machine Learning Models using Joblib
+- End-to-End Machine Learning Project Development
+  
 ## Conclusion
 
 This project successfully developed a Machine Learning-based Financial Risk Classification System capable of predicting whether a customer belongs to the Low Risk or High Risk category. The project followed a systematic workflow that included data preprocessing, missing value treatment using the KNN Imputer, exploratory data analysis, feature scaling, handling class imbalance with SMOTE, and building multiple classification models. Logistic Regression, Decision Tree, and Random Forest models were trained and evaluated using Accuracy, Precision, Recall, F1-Score, Confusion Matrix, and Classification Report.
